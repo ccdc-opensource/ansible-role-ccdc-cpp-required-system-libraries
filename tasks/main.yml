@@ -1,0 +1,19 @@
+---
+- name: Install system development libraries (Centos)
+  yum: 
+    name:
+      - libX11-devel
+      - libxml2-devel
+      - libxslt-devel
+      - ncurses-devel   # To build clewn
+      - readline-devel  # To build clewn
+    state: latest
+  when: "ansible_os_family == 'RedHat'"
+
+- name: Install XQuartz (MacOS)
+  homebrew_cask:
+    name: xquartz
+    state: present
+  when: "ansible_os_family == 'Darwin'"
+  
+  
