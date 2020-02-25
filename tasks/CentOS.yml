@@ -1,0 +1,12 @@
+---
+  - name: Install system development libraries (Centos)
+    yum: 
+      name:
+        - libX11-devel
+        - libxml2-devel
+        - libxslt-devel
+        - ncurses-devel   # To build clewn
+        - readline-devel  # To build clewn
+      state: latest
+      use_backend: yum
+    become: yes
