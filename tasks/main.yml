@@ -6,5 +6,6 @@
       - "{{ ansible_distribution }}.yml"
       - "{{ ansible_os_family }}.yml"
       - "{{ ansible_system }}.yml"
+    ignore_errors: yes
     loop_control:
       loop_var: taskfile
