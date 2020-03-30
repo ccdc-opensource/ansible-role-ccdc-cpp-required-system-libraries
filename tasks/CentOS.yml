@@ -42,7 +42,7 @@
       - unixODBC
       - urw-fonts
       - xcb-util # Qt build dependency
-      - alsa-libs-devel
+      - alsa-lib-devel
     state: latest
     use_backend: yum
   become: yes
