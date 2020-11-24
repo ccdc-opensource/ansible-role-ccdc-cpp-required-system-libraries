@@ -1,8 +1,9 @@
 ---
-- name: Install XQuartz
+- name: Remove XQuartz
   homebrew_cask:
     name: xquartz
-    state: present
+    state: absent
+  become: yes
 
 - name: Install required tools
   homebrew:
