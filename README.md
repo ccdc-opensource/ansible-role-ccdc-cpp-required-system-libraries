@@ -14,8 +14,6 @@ Applying this role will set up the system-level libraries required to compile CC
 
 ### macOS
 
-- XQuartz
-
 ### Windows
 
 ## Requirements
