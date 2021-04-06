@@ -1,0 +1,6 @@
+---
+- name: Install required libraries
+  homebrew:
+    name:
+      - libomp # Used by xgboost: pip packages require this library, while conda packages of xgboost don't
+    state: present
