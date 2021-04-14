@@ -3,4 +3,5 @@
   homebrew:
     name:
       - libomp # Used by xgboost: pip packages require this library, while conda packages of xgboost don't
+      - tcl-tk # used by the base python builds
     state: present
