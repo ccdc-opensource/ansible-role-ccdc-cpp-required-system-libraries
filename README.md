@@ -32,7 +32,7 @@ None.
 
     - hosts: all
       roles:
-        - ccdc-cpp-required-system-libraries
+        - ccdc.cpp_required_system_libraries
 
 ## License
 
