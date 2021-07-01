@@ -1,7 +1,7 @@
 ---
 - name: Install system development libraries (Centos)
   yum:
-    name:      
+    name:
       - cairo-devel # for graphviz
       - cryptopp-devel
       - dbus-devel # Qt build dependency
@@ -43,6 +43,6 @@
       - urw-fonts
       - xcb-util # Qt build dependency
       - alsa-lib-devel # QtWebEngine dependency
-    state: latest
+    state: present
     use_backend: yum
-  become: yes
+  become: true
