@@ -4,18 +4,6 @@ Install a set of system libraries required for CCDC C++ builds.
 
 Applying this role will set up the system-level libraries required to compile CCDC applications.
 
-### Linux
-
-- libX11-devel
-- libxml2-devel
-- libxslt-devel
-- ncurses-devel   # To build clewn
-- readline-devel  # To build clewn
-
-### macOS
-
-### Windows
-
 ## Requirements
 
 None.
@@ -32,7 +20,7 @@ None.
 
     - hosts: all
       roles:
-        - ccdc-cpp-required-system-libraries
+        - ccdc.cpp_required_system_libraries
 
 ## License
 
