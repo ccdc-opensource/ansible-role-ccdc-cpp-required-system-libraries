@@ -1,7 +1,9 @@
 ---
-- name: Install required libraries
-  homebrew:
-    name:
-      - libomp # Used by xgboost: pip packages require this library, while conda packages of xgboost don't
-      - tcl-tk # used by the base python builds
-    state: present
+- name: Insall Homebrew + required libraries
+  ansible.builtin.include_role:
+    name: geerlingguy.mac.homebrew
+  vars:
+    homebrew_installed_packages:
+      - libomp
+      - tcl-tk
+# This is overwritten by our group_vars (cpp.build-machines)
