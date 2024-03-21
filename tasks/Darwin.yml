@@ -6,4 +6,5 @@
     homebrew_installed_packages:
       - libomp
       - tcl-tk
+  when: not cpp_buildmachine
 # This is overwritten by our group_vars (cpp.build-machines)
