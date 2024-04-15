@@ -1,5 +1,5 @@
 ---
-- name: Insall Homebrew + required libraries
+- name: Install Homebrew + required libraries
   ansible.builtin.include_role:
     name: geerlingguy.mac.homebrew
   vars:
