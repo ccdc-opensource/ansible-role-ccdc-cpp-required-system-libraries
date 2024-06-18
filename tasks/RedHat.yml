@@ -2,14 +2,8 @@
 - name: Install system development libraries (RedHat)
   ansible.builtin.dnf:
     name:
-      - cairo-devel # for graphviz
-      - cryptopp-devel
       - dbus-devel # Qt build dependency
-      - expat-devel # Qt build dependency
-      - fontconfig-devel # Qt build dependency
-      - freetype-devel # Qt build dependency
       - gd-devel # for graphviz
-      - inchi-devel
       - libcap-devel # Qt build dependency
       - libdrm-devel # Qt build dependency
       - libffi-devel
@@ -22,13 +16,10 @@
       - libXfixes-devel # Qt build dependency
       - libXi-devel # Qt build dependency
       - libxkbcommon-x11 # Qt build dependency
-      - libxkbcommon-x11-devel # Qt build dependency
-      - libxml2-devel
       - libXmu-devel
       - libXrandr-devel # Qt build dependency
       - libXrender-devel # Qt build dependency
       - libXScrnSaver-devel # Qt build dependency
-      - libxslt-devel
       - libXtst-devel # Qt build dependency
       - mesa-libEGL-devel # Qt build dependency
       - mesa-libGL-devel # Qt build dependency
@@ -37,8 +28,6 @@
       - pango-devel # for graphviz
       - readline-devel # To build clewn
       - tcl-devel
-      - tcl-togl
-      - tcl-togl-devel
       - tk-devel
       - unixODBC
       - urw-fonts
