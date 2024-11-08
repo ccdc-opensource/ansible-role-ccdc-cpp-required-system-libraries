@@ -16,6 +16,7 @@
       - libXfixes-devel # Qt build dependency
       - libXi-devel # Qt build dependency
       - libxkbcommon-x11 # Qt build dependency
+      - libxkbfile # Qt build dependency
       - libXmu-devel
       - libXrandr-devel # Qt build dependency
       - libXrender-devel # Qt build dependency
@@ -38,6 +39,8 @@
       - xcb-util-renderutil # Qt build dependency
       - xcb-util-wm # Qt build dependency
       - alsa-lib-devel # QtWebEngine dependency
+      - cups # Qt PrintSupport dependency
+      - cups-devel # Qt PrintSupport dependency
     state: present
     enable_plugin: crb
   become: true
